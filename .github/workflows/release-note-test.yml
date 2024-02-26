@@ -1,4 +1,4 @@
-name: Release Drafter
+name: Create Release Note
 
 on:
   # PR が閉じられた時に自動実行する
@@ -19,12 +19,14 @@ jobs:
     runs-on: ubuntu-latest
     ## ここだけdeploy-to-production.ymlに入れればよさそう
     steps:
-      - name: Release Drafter
+      - name: Create Release Note
         uses: release-drafter/release-drafter@v5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_TAG: ${{ env.version }}
         with:
           # 自動でpublishまでする場合コメントアウトを外す
           # publish: true
-          name: ${{ env.version }}
+          name: Release ${{ env.version }}
           tag: ${{ env.version }}
+          version: ${{ env.version }}
