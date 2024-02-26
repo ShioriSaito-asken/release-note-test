@@ -1,18 +1,3 @@
-categories:
-  - title: '🚀 Features'
-    labels:
-      - 'enhancement'
-  - title: '🐛 Bug Fixes'
-    labels:
-      - 'bug'
-      - 'emergency'
-  - title: '🔧 Refactoring'
-    label: 'refactor'
-  - title: '📖 Documentation'
-    label: 'documentation'
-  - title: '✅ Tests'
-    label: 'test'
-    
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
 
 change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
@@ -20,23 +5,3 @@ change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add
 template: |
   ## Changes
   $CHANGES
-
-autolabeler:
-  - label: enhancement
-    branch:
-      - '/^feat(ure)?[/-].+/'
-  - label: bug
-    branch:
-      - '/^fix[/-].+/'
-  - label: emergency
-    branch:
-      - '/^hotfix[/-].+/'
-  - label: test
-    branch:
-      - '/^test[/-].+/'
-  - label: refactor
-    branch:
-      - '/^refactor[/-].+/'
-  - label: documentation
-    branch:
-      - '/^doc[/-].+/'
