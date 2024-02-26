@@ -6,8 +6,9 @@ on:
     branches:
       - main
     types:
-      #- closed
-      - [opened, reopened, synchronize]
+      - closed
+  pull_request_target:
+    types: [opened, reopened, synchronize]
 
 jobs:
   update_release_draft:
@@ -21,6 +22,7 @@ jobs:
         uses: release-drafter/release-drafter@v5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          #TODO v202402261710は ${{ env.version }}に戻す
           RELEASE_TAG: v202402261710
         with:
           # 自動でpublishまでする場合コメントアウトを外す
