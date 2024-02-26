@@ -1,16 +1,15 @@
 name: Release Drafter
 
 on:
+  # PR が閉じられた時に自動実行する
   pull_request:
-  # PRが閉じたタイミングで実行
-  types:
-    - closed
-  # mainブランチのみを対象とする
-  branches:
-    - main
+    branches:
+      - main
+    types:
+      - closed
 
-permissions:
-  contents: read
+#permissions:
+ # contents: read
 
 jobs:
   update_release_draft:
