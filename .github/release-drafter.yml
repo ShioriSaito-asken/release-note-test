@@ -33,22 +33,22 @@ template: |
   ## Changes
   $CHANGES
 
-#autolabeler:
-#  - label: enhancement
-#    branch:
-#      - '/^feature[/-].+/'
-#  - label: bug
-#    branch:
-#      - '/^fix[/-].+/'
-#  - label: emergency
-#    branch:
-#      - '/^hotfix[/-].+/'
-#  - label: test
-#    branch:
-#      - '/^test[/-].+/'
-#  - label: refactor
-#    branch:
-#      - '/^refactor[/-].+/'
-#  - label: documentation
-#    branch:
-#      - '/^doc[/-].+/'
+autolabeler:
+ - label: enhancement
+   branch:
+     - '/^feature[/-].+/'
+ - label: bug
+   branch:
+     - '/^fix[/-].+/'
+ - label: emergency
+   branch:
+     - '/^hotfix[/-].+/'
+ - label: test
+   branch:
+     - '/^test[/-].+/'
+ - label: refactor
+   branch:
+     - '/^refactor[/-].+/'
+ - label: documentation
+   branch:
+     - '/^doc[/-].+/'
