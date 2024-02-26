@@ -22,11 +22,11 @@ jobs:
         uses: release-drafter/release-drafter@v5
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          #TODO v202402261710は ${{ env.version }}に戻す
-          RELEASE_TAG: v202402261710
+          #TODO v202402261910は ${{ env.version }}に戻す
+          RELEASE_TAG: v202402261910
         with:
           # 自動でpublishまでする場合コメントアウトを外す
           # publish: true
-          name: Release v202402261710
-          tag: v202402261710
-          version: v202402261710
+          name: Release v202402261910
+          tag: v202402261910
+          version: v202402261910
