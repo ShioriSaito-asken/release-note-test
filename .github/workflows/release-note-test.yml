@@ -21,10 +21,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           #TODO v202402261910は ${{ env.version }}に戻す
-          RELEASE_TAG: v202402261910
+          RELEASE_TAG: v202402271910
         with:
           # 自動でpublishまでする場合コメントアウトを外す
-          # publish: true
-          name: Release v202402261910
-          tag: v202402261910
-          version: v202402261910
+          publish: true
+          name: Release v202402271910
+          tag: v202402271910
+          version: v202402271910
