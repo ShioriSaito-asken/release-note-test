@@ -2,3 +2,4 @@ test4
 ${{ env.version }}
 testtest
 ラベルテスト2
+自動パブリッシュ
