@@ -3,3 +3,4 @@ ${{ env.version }}
 testtest
 ラベルテスト2
 自動パブリッシュ
+ラベル無し
